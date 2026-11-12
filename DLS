@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BURA Football</title>
+    <style>
+        body {
+            background: #101827;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+        h1 {
+            color: #00ff88;
+        }
+        .match {
+            background: #243247;
+            padding: 25px;
+            margin: 30px;
+            border-radius: 15px;
+        }
+        button {
+            padding: 12px;
+            margin: 8px;
+            cursor: pointer;
+            background: #00cc77;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>⚽ BURA FOOTBALL</h1>
+<h2>Football Prediction Game</h2>
+
+<div class="match">
+    <h2>Arsenal VS Chelsea</h2>
+    <button onclick="predict('Arsenal')">
+        Arsenal Win
+    </button>
+    <button onclick="predict('Draw')">
+        Draw
+    </button>
+    <button onclick="predict('Chelsea')">
+        Chelsea Win
+    </button>
+    <h3 id="result">Choose Your Prediction</h3>
+</div>
+
+<script>
+function predict(team) {
+    document.getElementById("result").innerHTML =
+    "Your Prediction: " + team;
+}
+</script>
+
+</body>
+</html>
